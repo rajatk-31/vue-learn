@@ -1,11 +1,18 @@
 <script>
 import Greet from "./components/Greet.vue";
+import Articless from "./components/Article.vue";
 export default {
   name: "App",
   components: {
     Greet,
+    Articless,
   },
-  data() {},
+  data() {
+    return {
+      name: "Musafir",
+      channel: "Aawara",
+    };
+  },
   methods: {},
   computed: {},
   watch: {},
@@ -16,6 +23,9 @@ export default {
   <Greet name="Rajat" />
   <Greet name="Rajesh" />
   <Greet name="Ramesh" />
+  <Greet :name="name" />
+  <!-- Need vbinding for other than string values       -->
+  <Articless id="test-id" title="hah" :score="50" />
 </template>
 
 <style scoped>
