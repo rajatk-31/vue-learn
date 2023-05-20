@@ -1,10 +1,10 @@
 <script>
-import Card from "./components/Card.vue";
+import NameList from "./components/NameList.vue";
 
 export default {
   name: "App",
   components: {
-    Card,
+    NameList,
   },
   data() {
     return {
@@ -18,22 +18,23 @@ export default {
 </script>
 
 <template>
-  <!-- <Card content="Card content 1" /> -->
-  <Card>
-    <h2>Slot content</h2>
-  </Card>
-  <Card>
-    <img src="https://picsum.photos/200" alt="" />
-  </Card>
+  <NameList>
+    <template v-slot:default="slotProps">
+      {{ slotProps.firstName }} {{ slotProps.lastName }}
+    </template>
+  </NameList>
 
-  <!-- For naemd slots -->
-  <Card>
-    <template v-slot:header><h2>Image</h2></template>
-    <template v-slot:default
-      ><img src="https://picsum.photos/seed/picsum/200" alt=""
-    /></template>
-    <template v-slot:footer><h3>Click me</h3></template>
-  </Card>
+  <NameList>
+    <template v-slot:default="slotProps">
+      {{ slotProps.lastName }} {{ slotProps.firstName }}
+    </template>
+  </NameList>
+
+  <NameList>
+    <template v-slot:default="slotProps">
+      {{ slotProps.firstName }}
+    </template>
+  </NameList>
 </template>
 
 <style scoped>
