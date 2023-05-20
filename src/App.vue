@@ -19,7 +19,7 @@ export default {
 
 <template>
   <h4>App component</h4>
-  <ChildStyles> <h4>Child style component</h4> </ChildStyles>
+  <ChildStyles> <h4>Child style component</h4></ChildStyles>
 </template>
 
 <style scoped>
