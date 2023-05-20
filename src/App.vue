@@ -1,35 +1,24 @@
 <script>
-import Greet from "./components/Greet.vue";
-import Articless from "./components/Article.vue";
-import Popup from "./components/Popup.vue";
+import Input from "./components/Input.vue";
+
 export default {
   name: "App",
   components: {
-    Greet,
-    Articless,
-    Popup,
+    Input,
   },
   data() {
     return {
-      showPopUp: false,
+      name: "",
     };
   },
-  methods: {
-    closePopup(name) {
-      this.showPopUp = false;
-      // alert(name);
-      console.log(name);
-    },
-  },
+  methods: {},
   computed: {},
   watch: {},
 };
 </script>
 
 <template>
-  <button v-show="!showPopUp" @click="showPopUp = true">Show popup</button>
-  <!-- <Popup v-show="showPopUp" @close="showPopUp = false"></Popup> -->
-  <Popup v-show="showPopUp" @close="closePopup"></Popup>
+  <Input v-model="name"></Input>
 </template>
 
 <style scoped>
