@@ -30,7 +30,9 @@ export default {
   <TabC v-if="activeTab == 'TabC'"></TabC> -->
 
   <!-- Vue specific -->
-  <component :is="activeTab" />
+  <keep-alive>
+    <component :is="activeTab" />
+  </keep-alive>
 </template>
 
 <style scoped>
