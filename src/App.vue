@@ -25,6 +25,15 @@ export default {
   <Card>
     <img src="https://picsum.photos/200" alt="" />
   </Card>
+
+  <!-- For naemd slots -->
+  <Card>
+    <template v-slot:header><h2>Image</h2></template>
+    <template v-slot:default
+      ><img src="https://picsum.photos/seed/picsum/200" alt=""
+    /></template>
+    <template v-slot:footer><h3>Click me</h3></template>
+  </Card>
 </template>
 
 <style scoped>
