@@ -1,10 +1,10 @@
 <script>
-import Input from "./components/Input.vue";
+import Card from "./components/Card.vue";
 
 export default {
   name: "App",
   components: {
-    Input,
+    Card,
   },
   data() {
     return {
@@ -18,7 +18,13 @@ export default {
 </script>
 
 <template>
-  <Input v-model="name"></Input>
+  <!-- <Card content="Card content 1" /> -->
+  <Card>
+    <h2>Slot content</h2>
+  </Card>
+  <Card>
+    <img src="https://picsum.photos/200" alt="" />
+  </Card>
 </template>
 
 <style scoped>
