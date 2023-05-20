@@ -1,10 +1,10 @@
 <script>
-import NameList from "./components/NameList.vue";
+import ChildStyles from "./components/ChildStyles.vue";
 
 export default {
   name: "App",
   components: {
-    NameList,
+    ChildStyles,
   },
   data() {
     return {
@@ -18,23 +18,8 @@ export default {
 </script>
 
 <template>
-  <NameList>
-    <template v-slot:default="slotProps">
-      {{ slotProps.firstName }} {{ slotProps.lastName }}
-    </template>
-  </NameList>
-
-  <NameList>
-    <template v-slot:default="slotProps">
-      {{ slotProps.lastName }} {{ slotProps.firstName }}
-    </template>
-  </NameList>
-
-  <NameList>
-    <template v-slot:default="slotProps">
-      {{ slotProps.firstName }}
-    </template>
-  </NameList>
+  <h4>App component</h4>
+  <ChildStyles> <h4>Child style component</h4> </ChildStyles>
 </template>
 
 <style scoped>
