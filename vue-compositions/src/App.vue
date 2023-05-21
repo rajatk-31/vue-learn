@@ -1,10 +1,10 @@
 <script setup>
-import Methods from "./components/Methods.vue";
+import VModel from "./components/VModel.vue";
 </script>
 
 <template>
   <div>
-    <Methods></Methods>
+    <VModel></VModel>
   </div>
 </template>
 
