@@ -1,10 +1,10 @@
 <script setup>
-import ProvideInject from "./components/ProvideInject.vue";
+import TemplateRef from "./components/TemplateRef.vue";
 </script>
 
 <template>
   <div>
-    <ProvideInject></ProvideInject>
+    <TemplateRef></TemplateRef>
   </div>
 </template>
 
