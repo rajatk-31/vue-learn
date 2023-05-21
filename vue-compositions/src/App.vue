@@ -1,10 +1,12 @@
 <script setup>
-import Person from "./components/Person.vue";
+import ClickCounter from "./components/ClickCounter.vue";
+import HoverCounter from "./components/HoverCounter.vue";
 </script>
 
 <template>
   <div>
-    <Person></Person>
+    <ClickCounter></ClickCounter>
+    <HoverCounter></HoverCounter>
   </div>
 </template>
 
