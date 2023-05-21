@@ -1,10 +1,10 @@
 <script setup>
-import TemplateRef from "./components/TemplateRef.vue";
+import Person from "./components/Person.vue";
 </script>
 
 <template>
   <div>
-    <TemplateRef></TemplateRef>
+    <Person></Person>
   </div>
 </template>
 
