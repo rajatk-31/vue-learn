@@ -1,10 +1,10 @@
 <script setup>
-import Watch from "./components/Watch.vue";
+import ProvideInject from "./components/ProvideInject.vue";
 </script>
 
 <template>
   <div>
-    <Watch></Watch>
+    <ProvideInject></ProvideInject>
   </div>
 </template>
 
