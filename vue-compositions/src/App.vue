@@ -1,10 +1,10 @@
 <script setup>
-import Computed from "./components/Computed.vue";
+import Watch from "./components/Watch.vue";
 </script>
 
 <template>
   <div>
-    <Computed></Computed>
+    <Watch></Watch>
   </div>
 </template>
 
