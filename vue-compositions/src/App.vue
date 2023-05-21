@@ -1,10 +1,10 @@
 <script setup>
-import VModel from "./components/VModel.vue";
+import Computed from "./components/Computed.vue";
 </script>
 
 <template>
   <div>
-    <VModel></VModel>
+    <Computed></Computed>
   </div>
 </template>
 
