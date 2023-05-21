@@ -1,10 +1,12 @@
 <script setup>
-import Data from "./components/Data.vue";
+import Demo1 from "./components/Demo1.vue";
+import Demo2 from "./components/Demo2.vue";
 </script>
 
 <template>
   <div>
-    <Data></Data>
+    <Demo2></Demo2>
+    <Demo1></Demo1>
   </div>
 </template>
 
